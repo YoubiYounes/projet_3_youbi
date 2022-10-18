@@ -1,6 +1,14 @@
 @import "./base/base";
 
 @import "./utils/variables";
+@import "./utils/mixin";
 
 @import "./layouts/header";
-@import "./layouts/card";
+@import "./layouts/footer";
+
+@import "./components/position";
+@import "./components/nav";
+@import "./components/button";
+@import "./components/article";
+@import "./components/section";
+@import "./components/card";

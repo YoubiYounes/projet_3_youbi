@@ -1,0 +1,10 @@
+@mixin background-nav {
+  background-color: darken($color-nav, 5%);
+}
+@mixin taille-titre {
+  font-size: 19px;
+  font-weight: 800;
+}
+@mixin taille-article {
+  font-size: 13.1px;
+}

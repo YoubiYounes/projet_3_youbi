@@ -1,0 +1,26 @@
+#card {
+    a {
+        text-decoration: none;
+        width: 100%;
+        color: black;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    img {
+        width: 100%;
+        height: 145px;
+        margin: 0px;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+    span {
+        display: block;
+        align-self: flex-end;
+    }
+}
