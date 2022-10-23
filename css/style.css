@@ -13,8 +13,25 @@ header .logo {
   margin-top: 20px;
 }
 
+footer {
+  padding: 20px;
+  background-color: black;
+}
 footer img {
-  width: 25%;
+  width: 30%;
+}
+footer ul {
+  list-style: none;
+  padding: 0px;
+  font-size: 12.3px;
+  font-weight: 400;
+  color: white;
+}
+footer li {
+  margin-bottom: 5px;
+}
+footer i {
+  padding-right: 5px;
 }
 
 .position {
@@ -106,28 +123,40 @@ section h2 {
 }
 
 #card a {
-  text-decoration: none;
   width: 100%;
+  text-decoration: none;
   color: black;
 }
 #card figure {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
   margin: 0px;
+  margin-bottom: 13px;
   border-radius: 15px;
   background-color: white;
 }
 #card img {
   width: 100%;
-  height: 145px;
+  height: 140px;
   margin: 0px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
-#card span {
-  display: block;
+#card figcaption {
+  display: flex;
+  flex-direction: column;
+  padding: 9px 0px 15px 10px;
+  font-size: 14.5px;
+  font-weight: 800;
+}
+#card p {
+  margin: 1px 0px 0px 0px;
+  font-size: 13.9px;
+  font-weight: 400;
+}
+#card i {
   align-self: flex-end;
+  padding-right: 20px;
+  position: relative;
+  bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
