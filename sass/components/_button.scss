@@ -9,4 +9,7 @@ button {
     font-weight: 500;
     letter-spacing : 0.2px;
     color: white;
+    @include tablette {
+        width: 30%;
+    }
 }

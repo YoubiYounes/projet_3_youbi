@@ -2,22 +2,23 @@ article {
     h2 {
         margin: 35px 0px 25px 15px;
         @include taille-titre;
+        @include tablette {
+            @include taille-titre-tablette;
+        }
     }
     ol {
+        list-style: none;
         padding: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        list-style-type: upper-greek;
+        @include tablette {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     li {
-        i {
-            color: rgb(100, 96, 96);
-            padding-right: 20px;
-        }
-        i:hover {
-            color: $color-primary;
-        }
-        list-style: none;
         width: 80%;
         margin-bottom: 20px;
         padding: 22px 0px 20px 20px;
@@ -26,5 +27,15 @@ article {
         background-color: $color-nav;
         @include taille-article;
         font-weight: 600;
+        @include tablette {
+            width: 200px;
+        }
+        i {
+            color: rgb(100, 96, 96);
+            padding-right: 20px;
+        }
+        i:hover {
+            color: $color-primary;
+        }
     }
 }
