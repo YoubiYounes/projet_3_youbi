@@ -2,9 +2,6 @@ article {
     h2 {
         margin: 35px 0px 25px 15px;
         @include taille-titre;
-        @include tablette {
-            @include taille-titre-tablette;
-        }
     }
     ol {
         list-style: none;
@@ -12,30 +9,62 @@ article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style-type: upper-greek;
-        @include tablette {
-            flex-direction: row;
-            justify-content: space-around;
-        }
+        counter-reset: li;
     }
     li {
-        width: 80%;
+        width: 85%;
         margin-bottom: 20px;
-        padding: 22px 0px 20px 20px;
+        padding: 22px 0px 20px 5px;
         border-radius: 7% / 30%;
         box-shadow: 0 3px 15px -6px gray;
         background-color: $color-nav;
         @include taille-article;
         font-weight: 600;
-        @include tablette {
-            width: 200px;
-        }
         i {
             color: rgb(100, 96, 96);
-            padding-right: 20px;
+            padding-right: 15px;
         }
-        i:hover {
+    }
+    li:hover {
+        background-color: #f0e6fc;
+        i {
             color: $color-primary;
+        }
+    }
+    li:before {
+        content: counter(li);
+        counter-increment: li;
+        color: white;
+        font-size: 11px;
+        font-weight: 400;
+        padding: 4px 6px 2px 6px;
+        background-color: $color-primary;
+        border-radius: 50%;
+        position: relative;
+        right: 15px;
+        top: 2px;
+    }
+    @include tablette {
+        h2 {
+            @include taille-titre-tablette;
+        }
+        ol {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        li {
+            width: 30%;
+        }
+    }
+    @include bureau {
+        width: 30%;
+        margin-top: 5px;
+        h2 {
+            @include taille-titre-tablette;
+            margin-bottom: 50px;
+        }
+        li {
+            width: 80%;
         }
     }
 }

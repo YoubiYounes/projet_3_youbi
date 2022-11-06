@@ -29,13 +29,45 @@ footer ul {
   padding: 0px;
   font-size: 12.5px;
   font-weight: 400;
-  color: white;
 }
 footer li {
   margin-bottom: 5px;
 }
+footer li a {
+  text-decoration: none;
+  color: white;
+}
 footer i {
   margin-right: 5px;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  footer {
+    padding-left: 0px;
+  }
+  footer h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  footer {
+    padding-left: 0px;
+  }
+  footer h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+  }
 }
 
 .position {
@@ -84,9 +116,14 @@ button {
   letter-spacing: 0.2px;
   color: white;
 }
-@media screen and (max-width: 992px) and (min-width: 550px) {
+@media screen and (max-width: 999px) and (min-width: 700px) {
   button {
     width: 30%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  button {
+    width: 20%;
   }
 }
 
@@ -95,47 +132,73 @@ article h2 {
   font-size: 19px;
   font-weight: 800;
 }
-@media screen and (max-width: 992px) and (min-width: 550px) {
-  article h2 {
-    font-size: 22px;
-    text-align: center;
-  }
-}
 article ol {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-type: upper-greek;
-}
-@media screen and (max-width: 992px) and (min-width: 550px) {
-  article ol {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  counter-reset: li;
 }
 article li {
-  width: 80%;
+  width: 85%;
   margin-bottom: 20px;
-  padding: 22px 0px 20px 20px;
+  padding: 22px 0px 20px 5px;
   border-radius: 7%/30%;
   box-shadow: 0 3px 15px -6px gray;
   background-color: #F2F2F2;
   font-size: 13.1px;
   font-weight: 600;
 }
-@media screen and (max-width: 992px) and (min-width: 550px) {
-  article li {
-    width: 200px;
-  }
-}
 article li i {
   color: rgb(100, 96, 96);
-  padding-right: 20px;
+  padding-right: 15px;
 }
-article li i:hover {
+article li:hover {
+  background-color: #f0e6fc;
+}
+article li:hover i {
   color: #9356DC;
+}
+article li:before {
+  content: counter(li);
+  counter-increment: li;
+  color: white;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 4px 6px 2px 6px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  position: relative;
+  right: 15px;
+  top: 2px;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  article h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  article ol {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  article li {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  article {
+    width: 30%;
+    margin-top: 5px;
+  }
+  article h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  article li {
+    width: 80%;
+  }
 }
 
 section {
@@ -148,45 +211,33 @@ section h2 {
   font-size: 19px;
   font-weight: 800;
 }
-@media screen and (max-width: 992px) and (min-width: 550px) {
+@media screen and (max-width: 999px) and (min-width: 700px) {
   section h2 {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  section {
+    width: 70%;
+    margin: 0px;
+  }
+  section h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
   }
 }
 
-#card .nouveau_a {
-  width: 45px;
-  padding: 5px 10px 5px 10px;
-  background-color: #99E2D0;
-  font-size: 11px;
-  font-weight: 500;
-  color: #278870;
-  position: absolute;
-  z-index: 2;
-  left: 70%;
-  top: 765px;
-}
-#card .nouveau_b {
-  width: 45px;
-  padding: 5px 10px 5px 10px;
-  background-color: #99E2D0;
-  font-size: 11px;
-  font-weight: 500;
-  color: #278870;
-  position: absolute;
-  z-index: 2;
-  left: 70%;
-  top: 980px;
-}
 #card a {
   width: 100%;
+  margin-bottom: 13px;
   text-decoration: none;
   color: black;
 }
 #card figure {
   margin: 0px;
-  margin-bottom: 13px;
   border-radius: 15px;
   background-color: white;
 }
@@ -218,10 +269,75 @@ section h2 {
   position: relative;
   bottom: 20px;
 }
-@media screen and (max-width: 992px) and (min-width: 550px) {
+#card .nouveau_a {
+  width: 45px;
+  padding: 5px 10px 5px 10px;
+  background-color: #99E2D0;
+  font-size: 11px;
+  font-weight: 500;
+  color: #278870;
+  position: absolute;
+  z-index: 2;
+  left: 70%;
+  top: 765px;
+}
+#card .nouveau_b {
+  width: 45px;
+  padding: 5px 10px 5px 10px;
+  background-color: #99E2D0;
+  font-size: 11px;
+  font-weight: 500;
+  color: #278870;
+  position: absolute;
+  z-index: 2;
+  left: 70%;
+  top: 980px;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
   #card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #card a {
+    width: 49%;
+    margin-bottom: 23px;
+  }
+  #card .nouveau_a {
+    left: 39%;
+    top: 640px;
+  }
+  #card .nouveau_b {
+    left: 88%;
+    top: 640px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #card a {
+    width: 49%;
+    margin-bottom: 23px;
+  }
+  #card .nouveau_a {
+    left: 28%;
+    top: 530px;
+  }
+  #card .nouveau_b {
+    left: 62.7%;
+    top: 530px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
   }
 }
 

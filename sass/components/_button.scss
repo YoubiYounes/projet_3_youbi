@@ -12,4 +12,7 @@ button {
     @include tablette {
         width: 30%;
     }
+    @include bureau {
+        width: 20%;
+    }
 }

@@ -1,20 +1,12 @@
 #card {
-    .nouveau_a {
-        @include nouveau;
-        top: 765px;
-    }
-    .nouveau_b {
-        @include nouveau;
-        top: 980px;
-    }
     a {
         width: 100%;
+        margin-bottom: 13px;
         text-decoration: none;
         color: black;
     }
     figure {
         margin: 0px;
-        margin-bottom: 13px;
         border-radius: 15px;
         background-color: white;
     }
@@ -46,8 +38,46 @@
         position: relative;
         bottom: 20px;
     }
+    .nouveau_a {
+        @include nouveau;
+        top: 765px;
+    }
+    .nouveau_b {
+        @include nouveau;
+        top: 980px;
+    }
     @include tablette {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            width: 49%;
+            margin-bottom: 23px;
+        }
+        .nouveau_a {
+            left: 39%;
+            top: 640px;
+        }
+        .nouveau_b {
+            left: 88%;
+            top: 640px;
+        }
+    }
+    @include bureau {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            width: 49%;
+            margin-bottom: 23px;
+        }
+        .nouveau_a {
+            left: 28%;
+            top: 530px;
+        }
+        .nouveau_b {
+            left: 62.7%;
+            top: 530px;
+        }
     }
 }
