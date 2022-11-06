@@ -232,7 +232,6 @@ section h2 {
 
 #card a {
   width: 100%;
-  margin-bottom: 13px;
   text-decoration: none;
   color: black;
 }
@@ -240,6 +239,7 @@ section h2 {
   margin: 0px;
   border-radius: 15px;
   background-color: white;
+  margin-bottom: 13px;
 }
 #card img {
   width: 100%;
@@ -303,6 +303,9 @@ section h2 {
     width: 49%;
     margin-bottom: 23px;
   }
+  #card figure {
+    margin-bottom: 0px;
+  }
   #card .nouveau_a {
     left: 39%;
     top: 640px;
@@ -321,6 +324,9 @@ section h2 {
   #card a {
     width: 49%;
     margin-bottom: 23px;
+  }
+  #card figure {
+    margin-bottom: 0px;
   }
   #card .nouveau_a {
     left: 28%;

@@ -1,7 +1,6 @@
 #card {
     a {
         width: 100%;
-        margin-bottom: 13px;
         text-decoration: none;
         color: black;
     }
@@ -9,6 +8,7 @@
         margin: 0px;
         border-radius: 15px;
         background-color: white;
+        margin-bottom: 13px;
     }
     img {
         width: 100%;
@@ -54,6 +54,9 @@
             width: 49%;
             margin-bottom: 23px;
         }
+        figure {
+            margin-bottom: 0px;
+        }
         .nouveau_a {
             left: 39%;
             top: 640px;
@@ -70,6 +73,9 @@
         a {
             width: 49%;
             margin-bottom: 23px;
+        }
+        figure {
+            margin-bottom: 0px;
         }
         .nouveau_a {
             left: 28%;
