@@ -110,11 +110,16 @@ button {
   padding: 13px 10px 12px 10px;
   border: none;
   border-radius: 10%/50%;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: #9356DC;
+  box-shadow: 0 3px 15px -6px gray;
   font-size: 12.4px;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: white;
+}
+button:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 6px 15px -3px gray;
 }
 @media screen and (max-width: 999px) and (min-width: 700px) {
   button {
