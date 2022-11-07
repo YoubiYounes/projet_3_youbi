@@ -15,4 +15,12 @@ nav {
         font-weight: 400;
         color: rgb(100, 96, 96);
     }
+    @include bureau {
+        h1 {
+            font-size: 21px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
 }

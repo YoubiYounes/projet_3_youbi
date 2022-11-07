@@ -103,6 +103,14 @@ nav p {
   font-weight: 400;
   color: rgb(100, 96, 96);
 }
+@media screen and (min-width: 1000px) {
+  nav h1 {
+    font-size: 21px;
+  }
+  nav p {
+    font-size: 15px;
+  }
+}
 
 button {
   width: 60%;
@@ -110,25 +118,28 @@ button {
   padding: 13px 10px 12px 10px;
   border: none;
   border-radius: 10%/50%;
-  background-color: #9356DC;
-  box-shadow: 0 3px 15px -6px gray;
+  background: linear-gradient(#FF79DA, #9356DC 55%);
+  box-shadow: 0 6px 15px -3px gray;
   font-size: 12.4px;
   font-weight: 500;
   letter-spacing: 0.2px;
   color: white;
 }
 button:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 6px 15px -3px gray;
+  background: linear-gradient(#FF79DA, #9356DC 95%);
+  box-shadow: 0 10px 15px 3px gray;
 }
 @media screen and (max-width: 999px) and (min-width: 700px) {
   button {
-    width: 30%;
+    width: 25%;
+    padding: 15px 10px 14px 10px;
   }
 }
 @media screen and (min-width: 1000px) {
   button {
-    width: 20%;
+    width: 15%;
+    padding: 15px 10px 14px 10px;
+    font-size: 14px;
   }
 }
 
@@ -194,7 +205,9 @@ article li:before {
 @media screen and (min-width: 1000px) {
   article {
     width: 30%;
-    margin-top: 5px;
+    margin: 106px 0px 59px 10px;
+    border: 3px solid #F2F2F2;
+    border-radius: 15px;
   }
   article h2 {
     font-size: 22px;
@@ -227,6 +240,7 @@ section h2 {
   section {
     width: 70%;
     margin: 0px;
+    background-color: white;
   }
   section h2 {
     font-size: 22px;
@@ -332,6 +346,7 @@ section h2 {
   }
   #card figure {
     margin-bottom: 0px;
+    background-color: #e5e5e5;
   }
   #card .nouveau_a {
     left: 28%;

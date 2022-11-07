@@ -4,20 +4,23 @@ button {
     padding: 13px 10px 12px 10px;
     border: none;
     border-radius: 10% / 50%;
-    background-color: $color-primary;
-    box-shadow: 0 3px 15px -6px gray;
+    background: linear-gradient($color-secondary, $color-primary 55%);
+    box-shadow: 0 6px 15px -3px gray;
     font-size: 12.4px;
     font-weight: 500;
     letter-spacing : 0.2px;
     color: white;
     &:hover {
-        background: linear-gradient($color-secondary, $color-primary);
-        box-shadow: 0 6px 15px -3px gray;
+        background: linear-gradient($color-secondary, $color-primary 95%);
+        box-shadow: 0 10px 15px 3px gray;
     }
     @include tablette {
-        width: 30%;
+        width: 25%;
+        padding: 15px 10px 14px 10px;
     }
     @include bureau {
-        width: 20%;
+        width: 15%;
+        padding: 15px 10px 14px 10px;
+        font-size: 14px;
     }
 }

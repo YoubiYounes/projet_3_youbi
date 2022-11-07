@@ -76,6 +76,7 @@
         }
         figure {
             margin-bottom: 0px;
+            @include background-nav;
         }
         .nouveau_a {
             left: 28%;
