@@ -1,0 +1,14 @@
+.name {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin: 0;
+        font-family: 'Shrikhand', cursive;
+        font-size: 23px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    i {
+        @include position-icone;
+    }
+}

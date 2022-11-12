@@ -7,11 +7,27 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header a {
+  align-self: flex-start;
+  margin-left: 15px;
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 18px;
 }
 header .logo {
   width: 45%;
-  margin-top: 20px;
+  margin-top: 18px;
+}
+header + img {
+  width: 100%;
+  object-fit: cover;
 }
 
 footer {
@@ -73,7 +89,6 @@ footer i {
 .position {
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-top: 10px;
   text-align: center;
   box-shadow: inset 0px 4px 10px -9px black;
   background-color: #e5e5e5;
@@ -91,7 +106,7 @@ nav {
   text-align: center;
   background-color: #F2F2F2;
 }
-nav h1 {
+nav h2 {
   padding: 15px 40px 0px 40px;
   margin-bottom: 0px;
   font-size: 19px;
@@ -104,7 +119,7 @@ nav p {
   color: rgb(100, 96, 96);
 }
 @media screen and (min-width: 1000px) {
-  nav h1 {
+  nav h2 {
     font-size: 21px;
   }
   nav p {
@@ -205,7 +220,7 @@ article li:before {
 @media screen and (min-width: 1000px) {
   article {
     width: 30%;
-    margin: 106px 0px 59px 10px;
+    margin: 106px 10px 59px 0px;
     border: 3px solid #F2F2F2;
     border-radius: 15px;
   }
@@ -219,30 +234,30 @@ article li:before {
   }
 }
 
-section {
+.restaurant {
   margin-top: 35px;
   padding: 15px 15px 35px 15px;
   background-color: #F2F2F2;
 }
-section h2 {
+.restaurant h2 {
   margin: 25px 0px 16px 0px;
   font-size: 19px;
   font-weight: 800;
 }
 @media screen and (max-width: 999px) and (min-width: 700px) {
-  section h2 {
+  .restaurant h2 {
     font-size: 22px;
     text-align: center;
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1000px) {
-  section {
+  .restaurant {
     width: 70%;
     margin: 0px;
     background-color: white;
   }
-  section h2 {
+  .restaurant h2 {
     font-size: 22px;
     text-align: center;
     margin-bottom: 40px;
@@ -284,7 +299,6 @@ section h2 {
 #card i {
   align-self: flex-end;
   padding-right: 20px;
-  font-weight: 100;
   position: relative;
   bottom: 20px;
 }
@@ -349,11 +363,11 @@ section h2 {
     background-color: #e5e5e5;
   }
   #card .nouveau_a {
-    left: 28%;
+    left: 57%;
     top: 530px;
   }
   #card .nouveau_b {
-    left: 62.7%;
+    left: 91%;
     top: 530px;
   }
 }
@@ -361,10 +375,36 @@ section h2 {
 @media screen and (min-width: 1000px) {
   main {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
   }
+}
+.page {
+  padding: 15px;
+  background-color: #F2F2F2;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  bottom: 30px;
+  margin-bottom: -30px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name h1 {
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 23px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.name i {
+  align-self: flex-end;
+  padding-right: 20px;
+  position: relative;
+  bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

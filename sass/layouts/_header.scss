@@ -1,8 +1,24 @@
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    a {
+        align-self: flex-start;
+        margin-left: 15px;
+        padding: 2px;
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        top: 18px;
+    }
     .logo {
-    width: 45%;
-    margin-top: 20px;
+        width: 45%;
+        margin-top: 18px;
+    }
+    +img {
+        width: 100%;
+        object-fit: cover;
     }
 }

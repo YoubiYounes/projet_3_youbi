@@ -1,7 +1,7 @@
 @include bureau {
     main {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: space-between;
         margin-top: 10px;
     }
