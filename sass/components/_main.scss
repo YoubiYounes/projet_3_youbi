@@ -1,5 +1,5 @@
-@include bureau {
-    main {
+main {
+    @include bureau {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
