@@ -11,5 +11,27 @@
     }
     i {
         @include position-icone;
+        bottom: 25px;
+    }
+    @include tablette {
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+        i {
+            bottom: 60px;
+        }
+    }
+    @include bureau {
+        h1 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+        i {
+            bottom: 60px;
+            margin-right: 40px;
+        }
     }
 }

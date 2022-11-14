@@ -11,7 +11,7 @@ header {
         text-decoration: none;
         color: black;
         position: absolute;
-        top: 18px;
+        top: 3%;
     }
     .logo {
         width: 45%;
@@ -20,5 +20,27 @@ header {
     +img {
         width: 100%;
         object-fit: cover;
+    }
+    @include tablette {
+        a {
+            top: 6%;
+            i {
+                font-size: 20px;
+            }
+        }
+        +img {
+            height: 300px;
+        }
+    }
+    @include bureau {
+        a {
+            top: 9%;
+            i {
+                font-size: 30px;
+            }
+        }
+        +img {
+            height: 500px;
+        }
     }
 }

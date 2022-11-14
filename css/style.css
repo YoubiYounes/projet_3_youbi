@@ -19,7 +19,7 @@ header a {
   text-decoration: none;
   color: black;
   position: absolute;
-  top: 18px;
+  top: 3%;
 }
 header .logo {
   width: 45%;
@@ -28,6 +28,28 @@ header .logo {
 header + img {
   width: 100%;
   object-fit: cover;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  header a {
+    top: 6%;
+  }
+  header a i {
+    font-size: 20px;
+  }
+  header + img {
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header a {
+    top: 9%;
+  }
+  header a i {
+    font-size: 30px;
+  }
+  header + img {
+    height: 500px;
+  }
 }
 
 footer {
@@ -113,7 +135,7 @@ nav h2 {
   font-weight: 800;
 }
 nav p {
-  margin: 10px 15px 15px 15px;
+  margin: 10px 15px 0px 15px;
   font-size: 14.2px;
   font-weight: 400;
   color: rgb(100, 96, 96);
@@ -131,7 +153,7 @@ button {
   align-self: center;
   width: 60%;
   margin-bottom: 45px;
-  margin-top: 10px;
+  margin-top: 28px;
   padding: 13px 10px 12px 10px;
   border: none;
   border-radius: 10%/50%;
@@ -301,7 +323,7 @@ article li:before {
 }
 #card i {
   align-self: flex-end;
-  padding-right: 20px;
+  margin-right: 20px;
   position: relative;
   bottom: 20px;
 }
@@ -409,13 +431,36 @@ article li:before {
 }
 .name i {
   align-self: flex-end;
-  padding-right: 20px;
+  margin-right: 20px;
   position: relative;
   bottom: 20px;
+  bottom: 25px;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  .name h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .name i {
+    bottom: 60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .name h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .name i {
+    bottom: 60px;
+    margin-right: 40px;
+  }
 }
 
 .menu {
-  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .menu h2 {
   width: 35px;
@@ -426,7 +471,7 @@ article li:before {
   font-weight: 400;
 }
 .menu div {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding: 10px 10px 0 10px;
   background-color: white;
   border-radius: 15px;
@@ -448,6 +493,35 @@ article li:before {
   text-align: right;
   position: relative;
   bottom: 14px;
+}
+@media screen and (max-width: 999px) and (min-width: 700px) {
+  .menu {
+    margin-bottom: 55px;
+  }
+  .menu h2 {
+    margin-bottom: 20px;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menu {
+    width: 30%;
+    margin-bottom: 100px;
+  }
+  .menu h2 {
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .menu div {
+    margin-bottom: 20px;
+  }
+  .menu div h3 {
+    font-size: 16px;
+  }
+  .menu div p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
