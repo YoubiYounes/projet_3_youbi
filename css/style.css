@@ -149,7 +149,7 @@ nav p {
   }
 }
 
-button {
+.button_principal {
   align-self: center;
   width: 60%;
   margin-bottom: 45px;
@@ -164,18 +164,18 @@ button {
   letter-spacing: 0.2px;
   color: white;
 }
-button:hover {
+.button_principal:hover {
   background: linear-gradient(#FF79DA, #9356DC 95%);
   box-shadow: 0 10px 15px 3px gray;
 }
 @media screen and (max-width: 999px) and (min-width: 700px) {
-  button {
+  .button_principal {
     width: 25%;
     padding: 15px 10px 14px 10px;
   }
 }
 @media screen and (min-width: 1000px) {
-  button {
+  .button_principal {
     width: 15%;
     padding: 15px 10px 14px 10px;
     font-size: 14px;
@@ -409,7 +409,7 @@ article li:before {
 .page {
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 0px 10px;
   background-color: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
   position: relative;
@@ -470,22 +470,24 @@ article li:before {
   font-size: 13px;
   font-weight: 400;
 }
-.menu div {
+.menu button {
   margin-bottom: 11px;
   padding: 10px 10px 0 10px;
   background-color: white;
+  border: none;
   border-radius: 15px;
   box-shadow: 0 3px 15px -6px gray;
+  text-align: left;
 }
-.menu div h3 {
+.menu button h3 {
   margin: 0 0 5px 0;
   font-size: 14px;
 }
-.menu div p {
+.menu button p {
   margin: 0;
   font-size: 12px;
 }
-.menu div span {
+.menu button span {
   height: 10px;
   padding-right: 8px;
   display: block;
@@ -513,13 +515,13 @@ article li:before {
     font-size: 15px;
     font-weight: 400;
   }
-  .menu div {
+  .menu button {
     margin-bottom: 20px;
   }
-  .menu div h3 {
+  .menu button h3 {
     font-size: 16px;
   }
-  .menu div p {
+  .menu button p {
     font-size: 14px;
   }
 }
